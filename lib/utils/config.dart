@@ -28,4 +28,18 @@ class Config {
   static final spaceLarge = SizedBox(
     height: screenHeight! * 0.8,
   );
+
+  // textform field border
+  static const outlineBorder =
+      OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8)));
+
+  static const focusBorder = OutlineInputBorder(
+      borderRadius: BorderRadius.all(Radius.circular(8)),
+      borderSide: BorderSide(color: Colors.greenAccent));
+
+  static const errorBorder = OutlineInputBorder(
+      borderRadius: BorderRadius.all(Radius.circular(8)),
+      borderSide: BorderSide(color: Colors.red));
+
+  static const primayColor = Colors.greenAccent;
 }
