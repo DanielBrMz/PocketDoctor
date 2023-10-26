@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pocket_doctor/components/login_form.dart';
 import 'package:pocket_doctor/utils/config.dart';
 import 'package:pocket_doctor/utils/text.dart';
 
@@ -32,13 +33,27 @@ class _AuthPageState extends State<AuthPage> {
                   )),
               Config.spaceSmall,
               Text(
-                AppText.enText['singIn_text']!,
+                AppText.enText['signIn_text']!,
                 style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               Config.spaceSmall,
+              LoginForm(),
+              Config.spaceSmall,
+              Center(
+                child: TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    AppText.enText['forgot-password']!,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
