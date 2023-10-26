@@ -41,5 +41,5 @@ class Config {
       borderRadius: BorderRadius.all(Radius.circular(8)),
       borderSide: BorderSide(color: Colors.red));
 
-  static const primayColor = Colors.greenAccent;
+  static const primayColor = Colors.blue;
 }

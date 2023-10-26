@@ -54,9 +54,9 @@ class DoctorCard extends StatelessWidget {
                         ),
                       ),
                       const Spacer(),
-                      Row(
+                      const Row(
                         mainAxisAlignment: MainAxisAlignment.start,
-                        children: const <Widget>[
+                        children: <Widget>[
                           Icon(
                             Icons.star_border,
                             color: Colors.yellow,
