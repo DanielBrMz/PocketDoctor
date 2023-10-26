@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pocket_doctor/components/button.dart';
 import 'package:pocket_doctor/utils/config.dart';
 
 class LoginForm extends StatefulWidget {
@@ -58,6 +59,12 @@ class _LoginFormState extends State<LoginForm> {
                         )),
             )),
         Config.spaceSmall,
+        Button(
+          width: double.infinity,
+          title: 'Iniciar sesión',
+          onPressed: () {},
+          disable: false,
+        ),
       ]),
     );
   }

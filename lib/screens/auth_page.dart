@@ -40,7 +40,7 @@ class _AuthPageState extends State<AuthPage> {
                 ),
               ),
               Config.spaceSmall,
-              LoginForm(),
+              const LoginForm(),
               Config.spaceSmall,
               Center(
                 child: TextButton(
@@ -50,10 +50,12 @@ class _AuthPageState extends State<AuthPage> {
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
+                      color: Colors.black,
                     ),
                   ),
                 ),
               ),
+              // add social button sign in
             ],
           ),
         ),
