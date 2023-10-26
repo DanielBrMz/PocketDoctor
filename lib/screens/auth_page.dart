@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pocket_doctor/components/login_form.dart';
+import 'package:pocket_doctor/components/social_button.dart';
 import 'package:pocket_doctor/utils/config.dart';
 import 'package:pocket_doctor/utils/text.dart';
 
@@ -56,6 +57,25 @@ class _AuthPageState extends State<AuthPage> {
                 ),
               ),
               // add social button sign in
+              const Spacer(),
+              Center(
+                  child: Text(
+                AppText.enText['social-login']!,
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.normal,
+                  color: Colors.grey.shade500,
+                ),
+              )),
+              Config.spaceSmall,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: const <Widget>[
+                  SocialButton(social: 'google'),
+                  SocialButton(social: 'facebook'),
+                ],
+              ),
+              Config.spaceSmall,
             ],
           ),
         ),
