@@ -1,5 +1,5 @@
-import "package:pocket_doctor/main.dart";
-import "package:pocket_doctor/utils/config.dart";
+import "package:doctor_appointment_app/main.dart";
+import "package:doctor_appointment_app/utils/config.dart";
 import "package:flutter/material.dart";
 import "package:shared_preferences/shared_preferences.dart";
 
@@ -21,7 +21,7 @@ class _ProfilePageState extends State<ProfilePage> {
           flex: 4,
           child: Container(
             width: double.infinity,
-            color: Config.primayColor,
+            color: Config.primaryColor,
             child: const Column(
               children: <Widget>[
                 SizedBox(
@@ -96,7 +96,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               child: const Text(
                                 "Profile",
                                 style: TextStyle(
-                                  color: Config.primayColor,
+                                  color: Config.primaryColor,
                                   fontSize: 15,
                                 ),
                               ),
@@ -120,7 +120,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               child: const Text(
                                 "History",
                                 style: TextStyle(
-                                  color: Config.primayColor,
+                                  color: Config.primaryColor,
                                   fontSize: 15,
                                 ),
                               ),
@@ -165,7 +165,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               child: const Text(
                                 "Logout",
                                 style: TextStyle(
-                                  color: Config.primayColor,
+                                  color: Config.primaryColor,
                                   fontSize: 15,
                                 ),
                               ),

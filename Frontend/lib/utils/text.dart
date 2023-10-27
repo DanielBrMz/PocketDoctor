@@ -1,14 +1,14 @@
-// This is pre-define text for app
+//this is pre-define text for app
 
 class AppText {
   static final enText = {
-    'welcome_text': 'Bienvenido',
-    'signIn_text': 'Iniciar sesión',
-    'registered_text': 'Ya tienes una cuenta?',
+    'welcome_text': 'Welcome',
+    'signIn_text': 'Sign in to your account',
+    'registered_text': 'Already have an account?',
     'register_text':
-        'Puedes ingresar fácilmente y conectar con los doctores en tu área',
-    'signUp_text': 'No tienes una cuenta?',
-    'social-login': 'O inicia sesión con',
-    'forgot-password': 'Olvidaste tu contraseña?',
+        'You can easily sign up, and connect to the Doctors nearby you',
+    'signUp_text': 'Don\'t have an account?',
+    'social-login': 'Or continue with social account',
+    'forgot-password': 'Forgot Your Password?',
   };
 }

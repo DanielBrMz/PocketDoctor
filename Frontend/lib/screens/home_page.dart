@@ -1,7 +1,7 @@
-import 'package:pocket_doctor/components/appointment_card.dart';
-import 'package:pocket_doctor/components/doctor_card.dart';
-import 'package:pocket_doctor/models/auth_model.dart';
-import 'package:pocket_doctor/utils/config.dart';
+import 'package:doctor_appointment_app/components/appointment_card.dart';
+import 'package:doctor_appointment_app/components/doctor_card.dart';
+import 'package:doctor_appointment_app/models/auth_model.dart';
+import 'package:doctor_appointment_app/utils/config.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
@@ -104,7 +104,7 @@ class _HomePageState extends State<HomePage> {
                               List<Widget>.generate(medCat.length, (index) {
                             return Card(
                               margin: const EdgeInsets.only(right: 20),
-                              color: Config.primayColor,
+                              color: Config.primaryColor,
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 15, vertical: 10),
@@ -145,7 +145,7 @@ class _HomePageState extends State<HomePage> {
                       doctor.isNotEmpty
                           ? AppointmentCard(
                               doctor: doctor,
-                              color: Config.primayColor,
+                              color: Config.primaryColor,
                             )
                           : Container(
                               width: double.infinity,

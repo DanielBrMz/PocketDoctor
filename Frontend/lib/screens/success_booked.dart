@@ -1,4 +1,4 @@
-import 'package:pocket_doctor/components/button.dart';
+import 'package:doctor_appointment_app/components/button.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -20,7 +20,7 @@ class AppointmentBooked extends StatelessWidget {
               width: double.infinity,
               alignment: Alignment.center,
               child: const Text(
-                'Agendada con éxito',
+                'Successfully Booked',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,

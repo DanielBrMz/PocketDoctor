@@ -1,12 +1,12 @@
-import 'package:pocket_doctor/components/button.dart';
-import 'package:pocket_doctor/models/auth_model.dart';
-import 'package:pocket_doctor/providers/dio_provider.dart';
-import 'package:pocket_doctor/utils/config.dart';
+import 'package:doctor_appointment_app/components/button.dart';
+import 'package:doctor_appointment_app/models/auth_model.dart';
+import 'package:doctor_appointment_app/providers/dio_provider.dart';
+import 'package:doctor_appointment_app/utils/config.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../components/custom_appbar.dart';
+import '../components//custom_appbar.dart';
 
 class DoctorDetails extends StatefulWidget {
   const DoctorDetails({Key? key, required this.doctor, required this.isFav})
@@ -253,7 +253,7 @@ class InfoCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
-          color: Config.primayColor,
+          color: Config.primaryColor,
         ),
         padding: const EdgeInsets.symmetric(
           vertical: 15,

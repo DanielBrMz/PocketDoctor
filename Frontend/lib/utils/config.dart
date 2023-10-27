@@ -1,3 +1,4 @@
+//set constant config here
 import 'package:flutter/material.dart';
 
 class Config {
@@ -5,41 +6,47 @@ class Config {
   static double? screenWidth;
   static double? screenHeight;
 
-  // width and height initialization
+  //width and height initialization
   void init(BuildContext context) {
     mediaQueryData = MediaQuery.of(context);
     screenWidth = mediaQueryData!.size.width;
     screenHeight = mediaQueryData!.size.height;
   }
 
-  static get widthSize => screenWidth;
+  static get widthSize {
+    return screenWidth;
+  }
 
-  static get heightSize => screenHeight;
+  static get heightSize {
+    return screenHeight;
+  }
 
-  // define spacing height
+  //define spacing height
   static const spaceSmall = SizedBox(
     height: 25,
   );
-
   static final spaceMedium = SizedBox(
     height: screenHeight! * 0.05,
   );
-
-  static final spaceLarge = SizedBox(
-    height: screenHeight! * 0.8,
+  static final spaceBig = SizedBox(
+    height: screenHeight! * 0.08,
   );
 
-  // textform field border
-  static const outlineBorder =
-      OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8)));
+  //textform field border
+  static const outlinedBorder = OutlineInputBorder(
+    borderRadius: BorderRadius.all(Radius.circular(8)),
+  );
 
   static const focusBorder = OutlineInputBorder(
       borderRadius: BorderRadius.all(Radius.circular(8)),
-      borderSide: BorderSide(color: Colors.greenAccent));
-
+      borderSide: BorderSide(
+        color: Colors.greenAccent,
+      ));
   static const errorBorder = OutlineInputBorder(
       borderRadius: BorderRadius.all(Radius.circular(8)),
-      borderSide: BorderSide(color: Colors.red));
+      borderSide: BorderSide(
+        color: Colors.red,
+      ));
 
-  static const primayColor = Colors.blue;
+  static const primaryColor = Colors.greenAccent;
 }

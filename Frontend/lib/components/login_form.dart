@@ -1,9 +1,17 @@
+import 'dart:convert';
+
+import 'package:doctor_appointment_app/components/button.dart';
+import 'package:doctor_appointment_app/main.dart';
+import 'package:doctor_appointment_app/models/auth_model.dart';
+import 'package:doctor_appointment_app/providers/dio_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:pocket_doctor/components/button.dart';
-import 'package:pocket_doctor/utils/config.dart';
+import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import '../utils/config.dart';
 
 class LoginForm extends StatefulWidget {
-  const LoginForm({super.key});
+  const LoginForm({Key? key}) : super(key: key);
 
   @override
   State<LoginForm> createState() => _LoginFormState();
@@ -18,54 +26,100 @@ class _LoginFormState extends State<LoginForm> {
   Widget build(BuildContext context) {
     return Form(
       key: _formKey,
-      child:
-          Column(mainAxisAlignment: MainAxisAlignment.start, children: <Widget>[
-        TextFormField(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+          TextFormField(
             controller: _emailController,
             keyboardType: TextInputType.emailAddress,
-            cursorColor: Config.primayColor,
+            cursorColor: Config.primaryColor,
             decoration: const InputDecoration(
-                hintText: 'Dirección de correo electrónico',
-                labelText: 'Correo electrónico',
-                alignLabelWithHint: true,
-                prefixIcon: Icon(Icons.email_outlined),
-                prefixIconColor: Config.primayColor)),
-        Config.spaceSmall,
-        TextFormField(
+              hintText: 'Email Address',
+              labelText: 'Email',
+              alignLabelWithHint: true,
+              prefixIcon: Icon(Icons.email_outlined),
+              prefixIconColor: Config.primaryColor,
+            ),
+          ),
+          Config.spaceSmall,
+          TextFormField(
             controller: _passController,
             keyboardType: TextInputType.visiblePassword,
-            cursorColor: Config.primayColor,
+            cursorColor: Config.primaryColor,
             obscureText: obsecurePass,
             decoration: InputDecoration(
-              hintText: 'Contraseña',
-              labelText: 'Contraseña',
-              alignLabelWithHint: true,
-              prefixIcon: const Icon(Icons.lock_outline),
-              prefixIconColor: Config.primayColor,
-              suffixIcon: IconButton(
-                  onPressed: () {
-                    setState(() {
-                      obsecurePass = !obsecurePass;
-                    });
-                  },
-                  icon: obsecurePass
-                      ? const Icon(
-                          Icons.visibility_off_outlined,
-                          color: Colors.black38,
-                        )
-                      : const Icon(
-                          Icons.visibility_outlined,
-                          color: Config.primayColor,
-                        )),
-            )),
-        Config.spaceSmall,
-        Button(
-          width: double.infinity,
-          title: 'Iniciar sesión',
-          onPressed: () {},
-          disable: false,
-        ),
-      ]),
+                hintText: 'Password',
+                labelText: 'Password',
+                alignLabelWithHint: true,
+                prefixIcon: const Icon(Icons.lock_outline),
+                prefixIconColor: Config.primaryColor,
+                suffixIcon: IconButton(
+                    onPressed: () {
+                      setState(() {
+                        obsecurePass = !obsecurePass;
+                      });
+                    },
+                    icon: obsecurePass
+                        ? const Icon(
+                            Icons.visibility_off_outlined,
+                            color: Colors.black38,
+                          )
+                        : const Icon(
+                            Icons.visibility_outlined,
+                            color: Config.primaryColor,
+                          ))),
+          ),
+          Config.spaceSmall,
+          Consumer<AuthModel>(
+            builder: (context, auth, child) {
+              return Button(
+                width: double.infinity,
+                title: 'Sign In',
+                onPressed: () async {
+                  //login here
+                  final token = await DioProvider()
+                      .getToken(_emailController.text, _passController.text);
+
+                  if (token) {
+                    //auth.loginSuccess(); //update login status
+                    //rediret to main page
+
+                    //grab user data here
+                    final SharedPreferences prefs =
+                        await SharedPreferences.getInstance();
+                    final tokenValue = prefs.getString('token') ?? '';
+
+                    if (tokenValue.isNotEmpty && tokenValue != '') {
+                      //get user data
+                      final response = await DioProvider().getUser(tokenValue);
+                      if (response != null) {
+                        setState(() {
+                          //json decode
+                          Map<String, dynamic> appointment = {};
+                          final user = json.decode(response);
+
+                          //check if any appointment today
+                          for (var doctorData in user['doctor']) {
+                            //if there is appointment return for today
+
+                            if (doctorData['appointments'] != null) {
+                              appointment = doctorData;
+                            }
+                          }
+
+                          auth.loginSuccess(user, appointment);
+                          MyApp.navigatorKey.currentState!.pushNamed('main');
+                        });
+                      }
+                    }
+                  }
+                },
+                disable: false,
+              );
+            },
+          )
+        ],
+      ),
     );
   }
 }

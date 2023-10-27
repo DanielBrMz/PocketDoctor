@@ -1,9 +1,9 @@
-import 'package:pocket_doctor/components/button.dart';
-import 'package:pocket_doctor/components/custom_appbar.dart';
-import 'package:pocket_doctor/main.dart';
-import 'package:pocket_doctor/models/booking_datetime_converted.dart';
-import 'package:pocket_doctor/providers/dio_provider.dart';
-import 'package:pocket_doctor/utils/config.dart';
+import 'package:doctor_appointment_app/components/button.dart';
+import 'package:doctor_appointment_app/components/custom_appbar.dart';
+import 'package:doctor_appointment_app/main.dart';
+import 'package:doctor_appointment_app/models/booking_datetime_converted.dart';
+import 'package:doctor_appointment_app/providers/dio_provider.dart';
+import 'package:doctor_appointment_app/utils/config.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -105,7 +105,7 @@ class _BookingPageState extends State<BookingPage> {
                             ),
                             borderRadius: BorderRadius.circular(15),
                             color: _currentIndex == index
-                                ? Config.primayColor
+                                ? Config.primaryColor
                                 : null,
                           ),
                           alignment: Alignment.center,
@@ -167,7 +167,7 @@ class _BookingPageState extends State<BookingPage> {
       rowHeight: 48,
       calendarStyle: const CalendarStyle(
         todayDecoration:
-            BoxDecoration(color: Config.primayColor, shape: BoxShape.circle),
+            BoxDecoration(color: Config.primaryColor, shape: BoxShape.circle),
       ),
       availableCalendarFormats: const {
         CalendarFormat.month: 'Month',

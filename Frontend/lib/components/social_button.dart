@@ -1,4 +1,4 @@
-import 'package:pocket_doctor/utils/config.dart';
+import 'package:doctor_appointment_app/utils/config.dart';
 import 'package:flutter/material.dart';
 
 class SocialButton extends StatelessWidget {
@@ -21,7 +21,7 @@ class SocialButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Image.asset(
-              'assets/google.png',
+              'assets/$social.png',
               width: 40,
               height: 40,
             ),

@@ -1,5 +1,5 @@
-import 'package:pocket_doctor/providers/dio_provider.dart';
-import 'package:pocket_doctor/utils/config.dart';
+import 'package:doctor_appointment_app/providers/dio_provider.dart';
+import 'package:doctor_appointment_app/utils/config.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
@@ -116,7 +116,7 @@ class _AppointmentPageState extends State<AppointmentPage> {
                     width: 100,
                     height: 40,
                     decoration: BoxDecoration(
-                      color: Config.primayColor,
+                      color: Config.primaryColor,
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Center(
@@ -207,7 +207,8 @@ class _AppointmentPageState extends State<AppointmentPage> {
                                   onPressed: () {},
                                   child: const Text(
                                     'Cancel',
-                                    style: TextStyle(color: Config.primayColor),
+                                    style:
+                                        TextStyle(color: Config.primaryColor),
                                   ),
                                 ),
                               ),
@@ -217,7 +218,8 @@ class _AppointmentPageState extends State<AppointmentPage> {
                               Expanded(
                                 child: OutlinedButton(
                                   style: OutlinedButton.styleFrom(
-                                      backgroundColor: Config.primayColor),
+                                    backgroundColor: Config.primaryColor,
+                                  ),
                                   onPressed: () {},
                                   child: const Text(
                                     'Reschedule',
@@ -264,7 +266,7 @@ class ScheduleCard extends StatelessWidget {
         children: <Widget>[
           const Icon(
             Icons.calendar_today,
-            color: Config.primayColor,
+            color: Config.primaryColor,
             size: 15,
           ),
           const SizedBox(
@@ -273,7 +275,7 @@ class ScheduleCard extends StatelessWidget {
           Text(
             '$day, $date',
             style: const TextStyle(
-              color: Config.primayColor,
+              color: Config.primaryColor,
             ),
           ),
           const SizedBox(
@@ -281,7 +283,7 @@ class ScheduleCard extends StatelessWidget {
           ),
           const Icon(
             Icons.access_alarm,
-            color: Config.primayColor,
+            color: Config.primaryColor,
             size: 17,
           ),
           const SizedBox(
@@ -291,7 +293,7 @@ class ScheduleCard extends StatelessWidget {
               child: Text(
             time,
             style: const TextStyle(
-              color: Config.primayColor,
+              color: Config.primaryColor,
             ),
           ))
         ],

@@ -1,4 +1,4 @@
-import "package:pocket_doctor/components/doctor_card.dart";
+import "package:doctor_appointment_app/components/doctor_card.dart";
 import "package:flutter/material.dart";
 import "package:provider/provider.dart";
 
