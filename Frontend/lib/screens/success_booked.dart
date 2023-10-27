@@ -1,4 +1,4 @@
-import 'package:doctor_appointment_app/components/button.dart';
+import 'package:pocket_doctor/components/button.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 

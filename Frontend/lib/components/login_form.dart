@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:doctor_appointment_app/components/button.dart';
-import 'package:doctor_appointment_app/main.dart';
-import 'package:doctor_appointment_app/models/auth_model.dart';
-import 'package:doctor_appointment_app/providers/dio_provider.dart';
+import 'package:pocket_doctor/components/button.dart';
+import 'package:pocket_doctor/main.dart';
+import 'package:pocket_doctor/models/auth_model.dart';
+import 'package:pocket_doctor/providers/dio_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';

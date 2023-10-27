@@ -1,4 +1,4 @@
-import 'package:doctor_appointment_app/utils/config.dart';
+import 'package:pocket_doctor/utils/config.dart';
 import 'package:flutter/material.dart';
 
 class SocialButton extends StatelessWidget {
