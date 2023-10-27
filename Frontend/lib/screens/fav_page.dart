@@ -20,7 +20,7 @@ class _FavPageState extends State<FavPage> {
         child: Column(
           children: [
             const Text(
-              'My Favorite Doctors',
+              'Mis doctores favoritos',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 18,

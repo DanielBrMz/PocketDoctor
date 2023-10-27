@@ -2,13 +2,13 @@
 
 class AppText {
   static final enText = {
-    'welcome_text': 'Welcome',
-    'signIn_text': 'Sign in to your account',
-    'registered_text': 'Already have an account?',
+    'welcome_text': 'Bienvenid@',
+    'signIn_text': 'Inicia sesión en tu cuenta',
+    'registered_text': '¿Ya tienes una cuenta?',
     'register_text':
-        'You can easily sign up, and connect to the Doctors nearby you',
-    'signUp_text': 'Don\'t have an account?',
-    'social-login': 'Or continue with social account',
-    'forgot-password': 'Forgot Your Password?',
+        'Puedes registrarte fácilmente y conectarte con los médicos cerca de ti',
+    'signUp_text': '¿No tienes una cuenta?',
+    'social-login': 'O continúa con una cuenta social',
+    'forgot-password': '¿Olvidaste tu contraseña?',
   };
 }

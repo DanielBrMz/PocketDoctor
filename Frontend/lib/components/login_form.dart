@@ -74,7 +74,7 @@ class _LoginFormState extends State<LoginForm> {
             builder: (context, auth, child) {
               return Button(
                 width: double.infinity,
-                title: 'Sign In',
+                title: 'Ingresar',
                 onPressed: () async {
                   //login here
                   final token = await DioProvider()

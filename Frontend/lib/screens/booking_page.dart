@@ -57,7 +57,7 @@ class _BookingPageState extends State<BookingPage> {
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 25),
                   child: Center(
                     child: Text(
-                      'Select Consultation Time',
+                      'Selecciona la hora de consulta',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
@@ -75,7 +75,7 @@ class _BookingPageState extends State<BookingPage> {
                         horizontal: 10, vertical: 30),
                     alignment: Alignment.center,
                     child: const Text(
-                      'Weekend is not available, please select another date',
+                      'Por favor, selecciona otra fecha',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,

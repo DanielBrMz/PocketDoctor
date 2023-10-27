@@ -69,7 +69,7 @@ class DoctorCard extends StatelessWidget {
                           Spacer(
                             flex: 1,
                           ),
-                          Text('Reviews'),
+                          Text('Reseñas'),
                           Spacer(
                             flex: 1,
                           ),

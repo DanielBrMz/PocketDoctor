@@ -61,7 +61,7 @@ class _AppointmentPageState extends State<AppointmentPage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             const Text(
-              'Appointment Schedule',
+              'Agendar una cita',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 18,
@@ -206,7 +206,7 @@ class _AppointmentPageState extends State<AppointmentPage> {
                                 child: OutlinedButton(
                                   onPressed: () {},
                                   child: const Text(
-                                    'Cancel',
+                                    'Cancelar',
                                     style:
                                         TextStyle(color: Config.primaryColor),
                                   ),
@@ -222,7 +222,7 @@ class _AppointmentPageState extends State<AppointmentPage> {
                                   ),
                                   onPressed: () {},
                                   child: const Text(
-                                    'Reschedule',
+                                    'Reagendar',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                 ),

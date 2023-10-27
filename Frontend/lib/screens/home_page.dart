@@ -24,19 +24,19 @@ class _HomePageState extends State<HomePage> {
     },
     {
       "icon": FontAwesomeIcons.heartPulse,
-      "category": "Cardiology",
+      "category": "Cardiología",
     },
     {
       "icon": FontAwesomeIcons.lungs,
-      "category": "Respirations",
+      "category": "Respiratorio",
     },
     {
       "icon": FontAwesomeIcons.hand,
-      "category": "Dermatology",
+      "category": "Dermatología",
     },
     {
       "icon": FontAwesomeIcons.personPregnant,
-      "category": "Gynecology",
+      "category": "Ginecología",
     },
     {
       "icon": FontAwesomeIcons.teeth,
@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       Config.spaceMedium,
                       const Text(
-                        'Category',
+                        'Categoria',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -135,7 +135,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       Config.spaceSmall,
                       const Text(
-                        'Appointment Today',
+                        'Cita hoy',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -157,7 +157,7 @@ class _HomePageState extends State<HomePage> {
                                 child: Padding(
                                   padding: EdgeInsets.all(20),
                                   child: Text(
-                                    'No Appointment Today',
+                                    'Sin citas hoy',
                                     style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w600,
@@ -168,7 +168,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                       Config.spaceSmall,
                       const Text(
-                        'Top Doctors',
+                        'Mejores doctores',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,

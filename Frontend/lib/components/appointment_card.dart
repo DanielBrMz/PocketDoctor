@@ -76,7 +76,7 @@ class _AppointmentCardState extends State<AppointmentCard> {
                         backgroundColor: Colors.red,
                       ),
                       child: const Text(
-                        'Cancel',
+                        'Cancelar',
                         style: TextStyle(color: Colors.white),
                       ),
                       onPressed: () {},
@@ -97,7 +97,7 @@ class _AppointmentCardState extends State<AppointmentCard> {
                               return RatingDialog(
                                   initialRating: 1.0,
                                   title: const Text(
-                                    'Rate the Doctor',
+                                    'Califica al doctor',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontSize: 25,
@@ -105,7 +105,7 @@ class _AppointmentCardState extends State<AppointmentCard> {
                                     ),
                                   ),
                                   message: const Text(
-                                    'Please help us to rate our Doctor',
+                                    'Por favor, ayudanos a calificar a nuestro doctor.',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontSize: 15,
@@ -141,7 +141,7 @@ class _AppointmentCardState extends State<AppointmentCard> {
                             });
                       },
                       child: const Text(
-                        'Completed',
+                        'Completado',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),

@@ -85,7 +85,7 @@ class _SignUpFormState extends State<SignUpForm> {
             builder: (context, auth, child) {
               return Button(
                 width: double.infinity,
-                title: 'Sign Up',
+                title: 'Registrarse',
                 onPressed: () async {
                   final userRegistration = await DioProvider().registerUser(
                       _nameController.text,
@@ -103,7 +103,7 @@ class _SignUpFormState extends State<SignUpForm> {
                       MyApp.navigatorKey.currentState!.pushNamed('main');
                     }
                   } else {
-                    print('register not successful');
+                    print('registro fallido');
                   }
                 },
                 disable: false,

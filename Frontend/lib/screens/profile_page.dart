@@ -36,7 +36,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   height: 10,
                 ),
                 Text(
-                  'Amanda Tan',
+                  'Amanda Rodríguez',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -46,7 +46,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   height: 10,
                 ),
                 Text(
-                  '23 Years Old | Female',
+                  '23 años | Femenino',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 15,
@@ -71,7 +71,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     child: Column(
                       children: [
                         const Text(
-                          'Profile',
+                          'Perfil',
                           style: TextStyle(
                             fontSize: 17,
                             fontWeight: FontWeight.w800,
@@ -94,7 +94,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             TextButton(
                               onPressed: () {},
                               child: const Text(
-                                "Profile",
+                                "Perfil",
                                 style: TextStyle(
                                   color: Config.primaryColor,
                                   fontSize: 15,
@@ -118,7 +118,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             TextButton(
                               onPressed: () {},
                               child: const Text(
-                                "History",
+                                "Historial",
                                 style: TextStyle(
                                   color: Config.primaryColor,
                                   fontSize: 15,
@@ -163,7 +163,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                 }
                               },
                               child: const Text(
-                                "Logout",
+                                "Cerrar Sesión",
                                 style: TextStyle(
                                   color: Config.primaryColor,
                                   fontSize: 15,

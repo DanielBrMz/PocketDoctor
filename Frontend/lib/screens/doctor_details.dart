@@ -139,7 +139,7 @@ class AboutDoctor extends StatelessWidget {
           SizedBox(
             width: Config.widthSize * 0.75,
             child: const Text(
-              'MBBS (International Medical University, Malaysia), MRCP (Royal College of Physicians, United Kingdom)',
+              'Universidad de Sonora',
               style: TextStyle(
                 color: Colors.grey,
                 fontSize: 15,
@@ -152,7 +152,7 @@ class AboutDoctor extends StatelessWidget {
           SizedBox(
             width: Config.widthSize * 0.75,
             child: const Text(
-              'Sarawak General Hospital',
+              'Hospital San José',
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
@@ -192,7 +192,7 @@ class DetailBody extends StatelessWidget {
           ),
           Config.spaceSmall,
           Text(
-            'Dr. ${doctor['doctor_name']} is an experience ${doctor['category']} Specialist at Sarawak, graduated since 2008, and completed his/her training at Sungai Buloh General Hospital.',
+            'Dr. ${doctor['doctor_name']} es un especialista experimentado en ${doctor['category']}, graduado desde 2008, y con practicas completadas en el Hospital General de Hermosillo.',
             style: const TextStyle(
               fontWeight: FontWeight.w500,
               height: 1.5,
