@@ -1,8 +1,8 @@
-# Install script for directory: /home/brmz/Documents/PocketDoctor/linux/flutter
+# Install script for directory: /home/brmz/Documents/PocketDoctor/Frontend/linux/flutter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/brmz/Documents/PocketDoctor/build/linux/x64/debug/bundle")
+  set(CMAKE_INSTALL_PREFIX "/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
