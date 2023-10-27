@@ -49,29 +49,29 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/pocket_doctor" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/pocket_doctor")
+  if(EXISTS "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/doctor_appointment_app" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/doctor_appointment_app")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/pocket_doctor"
+         FILE "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/doctor_appointment_app"
          RPATH "$ORIGIN/lib")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/pocket_doctor")
+   "/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/doctor_appointment_app")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle" TYPE EXECUTABLE FILES "/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/intermediates_do_not_run/pocket_doctor")
-  if(EXISTS "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/pocket_doctor" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/pocket_doctor")
+  file(INSTALL DESTINATION "/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle" TYPE EXECUTABLE FILES "/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/intermediates_do_not_run/doctor_appointment_app")
+  if(EXISTS "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/doctor_appointment_app" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/doctor_appointment_app")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/pocket_doctor"
+         FILE "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/doctor_appointment_app"
          OLD_RPATH "/home/brmz/Documents/PocketDoctor/Frontend/linux/flutter/ephemeral:"
          NEW_RPATH "$ORIGIN/lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/pocket_doctor")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/doctor_appointment_app")
     endif()
   endif()
 endif()
