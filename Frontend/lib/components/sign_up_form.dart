@@ -30,40 +30,40 @@ class _SignUpFormState extends State<SignUpForm> {
           TextFormField(
             controller: _nameController,
             keyboardType: TextInputType.text,
-            cursorColor: Config.primayColor,
+            cursorColor: Config.primaryColor,
             decoration: const InputDecoration(
               hintText: 'Username',
               labelText: 'Username',
               alignLabelWithHint: true,
               prefixIcon: Icon(Icons.person_outlined),
-              prefixIconColor: Config.primayColor,
+              prefixIconColor: Config.primaryColor,
             ),
           ),
           Config.spaceSmall,
           TextFormField(
             controller: _emailController,
             keyboardType: TextInputType.emailAddress,
-            cursorColor: Config.primayColor,
+            cursorColor: Config.primaryColor,
             decoration: const InputDecoration(
               hintText: 'Email Address',
               labelText: 'Email',
               alignLabelWithHint: true,
               prefixIcon: Icon(Icons.email_outlined),
-              prefixIconColor: Config.primayColor,
+              prefixIconColor: Config.primaryColor,
             ),
           ),
           Config.spaceSmall,
           TextFormField(
             controller: _passController,
             keyboardType: TextInputType.visiblePassword,
-            cursorColor: Config.primayColor,
+            cursorColor: Config.primaryColor,
             obscureText: obsecurePass,
             decoration: InputDecoration(
                 hintText: 'Password',
                 labelText: 'Password',
                 alignLabelWithHint: true,
                 prefixIcon: const Icon(Icons.lock_outline),
-                prefixIconColor: Config.primayColor,
+                prefixIconColor: Config.primaryColor,
                 suffixIcon: IconButton(
                     onPressed: () {
                       setState(() {
@@ -75,8 +75,10 @@ class _SignUpFormState extends State<SignUpForm> {
                             Icons.visibility_off_outlined,
                             color: Colors.black38,
                           )
-                        : const Icon(Icons.visibility_outlined,
-                            color: Config.primayColor))),
+                        : const Icon(
+                            Icons.visibility_outlined,
+                            color: Config.primaryColor,
+                          ))),
           ),
           Config.spaceSmall,
           Consumer<AuthModel>(

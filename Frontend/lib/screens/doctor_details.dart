@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../components/custom_appbar.dart';
+import '../components//custom_appbar.dart';
 
 class DoctorDetails extends StatefulWidget {
   const DoctorDetails({Key? key, required this.doctor, required this.isFav})
@@ -253,7 +253,7 @@ class InfoCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
-          color: Config.primayColor,
+          color: Config.primaryColor,
         ),
         padding: const EdgeInsets.symmetric(
           vertical: 15,

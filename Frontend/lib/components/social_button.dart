@@ -21,7 +21,7 @@ class SocialButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Image.asset(
-              'assets/google.png',
+              'assets/$social.png',
               width: 40,
               height: 40,
             ),

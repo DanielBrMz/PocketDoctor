@@ -1,4 +1,4 @@
-/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/pocket_doctor
+/home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/doctor_appointment_app
 /home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/data/icudtl.dat
 /home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
 /home/brmz/Documents/PocketDoctor/Frontend/build/linux/x64/debug/bundle/data/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf

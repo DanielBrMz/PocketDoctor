@@ -104,7 +104,7 @@ class _HomePageState extends State<HomePage> {
                               List<Widget>.generate(medCat.length, (index) {
                             return Card(
                               margin: const EdgeInsets.only(right: 20),
-                              color: Config.primayColor,
+                              color: Config.primaryColor,
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 15, vertical: 10),
@@ -145,7 +145,7 @@ class _HomePageState extends State<HomePage> {
                       doctor.isNotEmpty
                           ? AppointmentCard(
                               doctor: doctor,
-                              color: Config.primayColor,
+                              color: Config.primaryColor,
                             )
                           : Container(
                               width: double.infinity,

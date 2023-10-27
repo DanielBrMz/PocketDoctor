@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pocket_doctor/utils/config.dart';
+
+import '../utils/config.dart';
 
 class Button extends StatelessWidget {
   const Button(
@@ -12,7 +13,7 @@ class Button extends StatelessWidget {
 
   final double width;
   final String title;
-  final bool disable;
+  final bool disable; //this is used to disable button
   final Function() onPressed;
 
   @override
@@ -21,14 +22,14 @@ class Button extends StatelessWidget {
       width: width,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: Config.primayColor,
+          backgroundColor: Config.primaryColor,
           foregroundColor: Colors.white,
         ),
         onPressed: disable ? null : onPressed,
         child: Text(
           title,
           style: const TextStyle(
-            fontSize: 1,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),
