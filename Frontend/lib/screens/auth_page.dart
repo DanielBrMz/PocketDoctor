@@ -48,7 +48,7 @@ class _AuthPageState extends State<AuthPage> {
               ),
             ),
             Config.spaceSmall,
-            isSignIn ? LoginForm() : SignUpForm(),
+            isSignIn ? const LoginForm() : const SignUpForm(),
             Config.spaceSmall,
             isSignIn
                 ? Center(
